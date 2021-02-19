@@ -1,4 +1,4 @@
-# Anime-Manga_RPC_SERVER
+# Anime&Manga RPC SERVER
 Download the one compatible with your computer
 
 # [MacOs](https://raw.githubusercontent.com/Herom123/Anime-Manga_RPC_SERVER/main/Anime-Manga_RPC_macos_debug)
