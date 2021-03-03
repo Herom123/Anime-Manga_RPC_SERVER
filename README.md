@@ -1,5 +1,5 @@
 # Anime&Manga RPC SERVER
-## [Support Me on Patreon](patreon.com/Herom123)
+## [Support Me on Patreon](https://patreon.com/Herom123)
 
 Download the one compatible with your computer...
 After that add application to startup.
