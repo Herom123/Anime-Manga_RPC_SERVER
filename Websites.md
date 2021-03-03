@@ -1,8 +1,8 @@
 #### Anime Websites
 
 ###### turkanime.net
-###### tranimeizle.net
-###### crunchyroll.com
+###### tranimeizle.net\n
+crunchyroll.com
 ###### kissanime.ru.com
 ###### funimation.com
 ###### 9anime-tv.com
