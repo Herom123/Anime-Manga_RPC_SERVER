@@ -1,4 +1,6 @@
 # Anime&Manga RPC SERVER
+## [Support Me on Patreon](patreon.com/Herom123)
+
 Download the one compatible with your computer...
 After that add application to startup.
 ###### If you use windows, can start "startup_windows.bat" file and select option "1" and "3".
