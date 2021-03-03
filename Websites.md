@@ -1,7 +1,7 @@
-#### Anime Websites
+### Anime Websites
 
 - turkanime.net
-- tranimeizle.net\n
+- tranimeizle.net
 - crunchyroll.com
 - kissanime.ru.com
 - funimation.com
@@ -10,10 +10,8 @@
 - chia-anime.me
 - anime-planet.com
 - animeheaven.ru
-
-
-------------
-
+<br/>
+<br/>
 #### Manga Websites
 
 - manganelo.com
@@ -21,7 +19,7 @@
 - mangastein.com
 - mangadex.org
 - anime-planet.com
-
-------------
-
+<br/>
+<br/>
+<br/>
 don't you found your website [make a request](https://forms.gle/2QW5NvyJiogxCyzx6)!
