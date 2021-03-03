@@ -15,12 +15,12 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/^(?:(?=.*\bBölüm\b).* ([0-9,.]+)\.(?: )?Bölüm|.*)$/ // WWW.TURKANIME.NET
+          "check":/^(?:(?=.*\bBölüm\b).* ([0-9,.]+)\.(?: )?Bölüm|.*)$/
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/^(?:(?=.*\bBölüm\b)(.*) [0-9,.]+\.(?: )?Bölüm|(.*))$/ // WWW.TURKANIME.NET
+          "check":/^(?:(?=.*\bBölüm\b)(.*) [0-9,.]+\.(?: )?Bölüm|(.*))$/
       }
     },
     {
@@ -63,7 +63,7 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/Bölüm ([0-9]+) \| .*/ //Bölüm 92 | The Beginning After The End - Manga Gecesi
+          "check":/Bölüm ([0-9]+) \| .* - Manga Gecesi/ 
       },
       "name":{
           "state":true,
@@ -85,7 +85,7 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/.* - Bölüm ([0-9]+) - .*/ //SSS-Class Suicide Hunter - Bölüm 26 - MangaStein
+          "check":/.* - Bölüm ([0-9]+) - .*/ 
       },
       "name":{
           "state":true,
@@ -146,7 +146,7 @@
       [
         {
           "id":2,
-          "check":/episode-[0-9]+-.*-[0-9]+/ //Yashahime: Princess Half-Demon Episode 20, The Hidden Village for Half Demons, - Watch on Crunchyroll
+          "check":/episode-[0-9]+-.*-[0-9]+/
         }
       ],
       "ep":
