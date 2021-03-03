@@ -15,12 +15,12 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/^(?:(?=.*\bBölüm\b).* ([0-9,.]+)\.(?: )?Bölüm|.*)$/
+          "check":"^(?:(?=.*Bölüm).* ([0-9,.]+)\\.(?: )?\\..*Bölüm|.*)$"
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/^(?:(?=.*\bBölüm\b)(.*) [0-9,.]+\.(?: )?Bölüm|(.*))$/
+          "check":"^(?:(?=.*Bölüm).* ([0-9,.]+)\\.(?: )?\\..*Bölüm|.*)$"
       }
     },
     {
@@ -37,12 +37,12 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/.* Chapter ([0-9]+).*/
+          "check":".* Chapter ([0-9]+).*"
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/(.*) Chapter [0-9]+.*/
+          "check":"(.*) Chapter [0-9]+.*"
       }
     },
     {
@@ -56,19 +56,19 @@
         },
         {
           "id":3,
-          "check":/bolum-[0-9]+/
+          "check":"bolum-[0-9]+"
         }
       ],
       "ep":
       {
           "state":true,
           "getFromTitle":true,
-          "check":/Bölüm ([0-9]+) \| .* - Manga Gecesi/ 
+          "check":"Bölüm ([0-9]+) \\| .* - Manga Gecesi" 
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/Bölüm [0-9]+ \| (.*) - Manga Gecesi/
+          "check":"Bölüm [0-9]+ \\| (.*) - Manga Gecesi"
       }
     },
     {
@@ -85,12 +85,12 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/.* - Bölüm ([0-9]+) - .*/ 
+          "check":".* - Bölüm ([0-9]+) - .*" 
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/(.*) - Bölüm [0-9]+ - .*/
+          "check":"(.*) - Bölüm [0-9]+ - .*"
       }
     },
     {
@@ -107,14 +107,14 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/.* ([0-9,.]+) Bölüm İzle - Türkanime izle/,
-          "dont":/Bot Kontrol - Türkanime izle/
+          "check":".* ([0-9,.]+) Bölüm İzle - Türkanime izle",
+          "dont":"Bot Kontrol - Türkanime izle"
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/(.*) [0-9,.]+ Bölüm İzle - Türkanime izle/,
-          "dont":/Bot Kontrol - Türkanime izle/
+          "check":"(.*) [0-9,.]+ Bölüm İzle - Türkanime izle",
+          "dont":"Bot Kontrol - Türkanime izle"
       }
     },
     {
@@ -131,12 +131,12 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/.* -.* Ch\. ([0-9]+).* - MangaDex/ 
+          "check":".* -.* Ch\\. ([0-9]+).* - MangaDex" 
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/(.*) -.* Ch\. [0-9]+.* - MangaDex/
+          "check":"(.*) -.* Ch\\. [0-9]+.* - MangaDex"
       }
     },
     {
@@ -146,19 +146,19 @@
       [
         {
           "id":2,
-          "check":/episode-[0-9]+-.*-[0-9]+/
+          "check":"episode-[0-9]+-.*-[0-9]+"
         }
       ],
       "ep":
       {
           "state":true,
           "getFromTitle":true,
-          "check":/.* Episode ([0-9]+.*) - Watch on Crunchyroll/ 
+          "check":".* Episode ([0-9]+.*) - Watch on Crunchyroll" 
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/(.*) Episode [0-9]+.* - Watch on Crunchyroll/
+          "check":"(.*) Episode [0-9]+.* - Watch on Crunchyroll"
       }
     },
     {
@@ -175,12 +175,12 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/.* Episode ([0-9]+.*) - KissAnime.ru/ 
+          "check":".* Episode ([0-9]+.*) - KissAnime.ru" 
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/(.*) Episode [0-9]+.* - KissAnime.ru/
+          "check":"(.*) Episode [0-9]+.* - KissAnime.ru"
       }
     },
     {
@@ -193,22 +193,22 @@
           "check":"shows"
         },{
           "id":2,
-          "check":/..*/
+          "check":"..*"
         },{
           "id":3,
-          "check":/..*/
+          "check":"..*"
         }
       ],
       "ep":
       {
           "state":true,
           "getFromTitle":true,
-          "check":/Watch .* Season [0-9]+(?: Episode ([0-9]+|[0-9]+.[0-9]+) |.)(?:Sub & Dub \||Sub \||Dub \|) .* \| Funimation/
+          "check":"Watch .* Season [0-9]+(?: Episode ([0-9]+|[0-9]+.[0-9]+) |.)(?:Sub & Dub \\||Sub \\||Dub \\|) .* \\| Funimation"
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/Watch (.* Season [0-9]+)(?: Episode (?:[0-9]+|[0-9]+.[0-9]+) |.)(?:Sub & Dub \||Sub \||Dub \|) .* \| Funimation/ 
+          "check":"Watch (.* Season [0-9]+)(?: Episode (?:[0-9]+|[0-9]+.[0-9]+) |.)(?:Sub & Dub \\||Sub \\||Dub \\|) .* \\| Funimation" 
       }
     },
     {
@@ -218,19 +218,19 @@
       [
         {
           "id":1,
-          "check":/.*-(?:episode-[0-9]+-|\S).*-(?:sub|dub)/
+          "check":".*-(?:episode-[0-9]+-|\\\\S).*-(?:sub|dub)"
         }
       ],
       "ep":
       {
           "state":true,
           "getFromTitle":true,
-          "check":/(?:.* Episode ([0-9]+.[0-9]+|[0-9]+) |(.*) ).* (?:SUB|DUB)/ 
+          "check":"(?:.* Episode ([0-9]+.[0-9]+|[0-9]+) |(.*) ).* (?:SUB|DUB)" 
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/(?:(.*) Episode (?:[0-9]+.[0-9]+|[0-9]+) |(.*) ).* (?:SUB|DUB)/
+          "check":"(?:(.*) Episode (?:[0-9]+.[0-9]+|[0-9]+) |(.*) ).* (?:SUB|DUB)"
       }
     },
     {
@@ -247,12 +247,12 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/.* S[0-9]+:E([0-9]+) - [0-9]+ - AnimeLab/ 
+          "check":".* S[0-9]+:E([0-9]+) - [0-9]+ - AnimeLab" 
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/(.*) S[0-9]+:E[0-9]+ - [0-9]+ - AnimeLab/
+          "check":"(.*) S[0-9]+:E[0-9]+ - [0-9]+ - AnimeLab"
       }
     },
     {
@@ -262,19 +262,19 @@
       [
         {
           "id":1,
-          "check":/.*-episode-[0-9]+-.*/
+          "check":".*-episode-[0-9]+-.*"
         }
       ],
       "ep":
       {
           "state":true,
           "getFromTitle":true,
-          "check":/🎦 .* Episode ([0-9]+) Video Info - Chia-Anime/
+          "check":"🎦 .* Episode ([0-9]+) Video Info - Chia-Anime"
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/🎦 (.*) Episode [0-9]+ Video Info - Chia-Anime/
+          "check":"🎦 (.*) Episode [0-9]+ Video Info - Chia-Anime"
       }
     },
     {
@@ -288,7 +288,7 @@
         },
         {
           "id":2,
-          "check":/.*/
+          "check":".*"
         },
         {
           "id":3,
@@ -296,19 +296,19 @@
         },
         {
           "id":4,
-          "check":/[0-9]+/
+          "check":"[0-9]+"
         }
       ],
       "ep":
       {
           "state":true,
           "getFromTitle":true,
-          "check":/Watch .* Episode ([0-9]+.[0-9]+|[0-9]+) Online - .* \| Anime-Planet/
+          "check":"Watch .* Episode ([0-9]+.[0-9]+|[0-9]+) Online - .* \\| Anime-Planet"
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/Watch (.*) Episode (?:[0-9]+.[0-9]+|[0-9]+) Online - .* \| Anime-Planet/
+          "check":"Watch (.*) Episode (?:[0-9]+.[0-9]+|[0-9]+) Online - .* \\| Anime-Planet"
       }
     },
     {
@@ -322,7 +322,7 @@
         },
         {
           "id":2,
-          "check":/.*/
+          "check":".*"
         },
         {
           "id":3,
@@ -330,19 +330,19 @@
         },
         {
           "id":4,
-          "check":/[0-9]+/
+          "check":"[0-9]+"
         }
       ],
       "ep":
       {
           "state":true,
           "getFromTitle":true,
-          "check":/Read .* online - chapter ([0-9]+.[0-9]+|[0-9]+) \| Anime-Planet/
+          "check":"Read .* online - chapter ([0-9]+.[0-9]+|[0-9]+) \\| Anime-Planet"
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/Read (.*) online - chapter (?:[0-9]+.[0-9]+|[0-9]+) \| Anime-Planet/
+          "check":"Read (.*) online - chapter (?:[0-9]+.[0-9]+|[0-9]+) \\| Anime-Planet"
       }
     },
     {
@@ -359,12 +359,12 @@
       {
           "state":true,
           "getFromTitle":true,
-          "check":/Watch .* (?:Episode ([0-9]+|[0-9]+.[0-9]+))? Online Free \| AnimeHeaven/
+          "check":"Watch .* (?:Episode ([0-9]+|[0-9]+.[0-9]+))? Online Free \\| AnimeHeaven"
       },
       "name":{
           "state":true,
           "getFromTitle":true,
-          "check":/Watch (.*) (?:Episode (?:[0-9]+|[0-9]+.[0-9]+))? Online Free \| AnimeHeaven/
+          "check":"Watch (.*) (?:Episode (?:[0-9]+|[0-9]+.[0-9]+))? Online Free \\| AnimeHeaven"
       }
     },
   ]
