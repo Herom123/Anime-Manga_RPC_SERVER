@@ -3,7 +3,7 @@
 
 Download the one compatible with your computer...
 After that add application to startup.
-###### If you use windows, can start "startup_windows.bat" file and select option "1" and "3".<br/>If you not then just start program which is inside the zip.
+###### If you use windows, first of all extract files from zip,<br/> then can start "startup_windows.bat" file and select option "1" and "3".<br/>If you not then just start program which is inside the zip.
 
 ###### Also you can watch tutorial [here]()
 
