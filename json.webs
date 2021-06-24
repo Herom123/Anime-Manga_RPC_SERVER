@@ -24,13 +24,13 @@
       }
     },
     {
-      "baseUrl":"manganelo.com",
+      "baseUrl":"readmanganato.com",
       "type":"manga",
       "extra":
       [
         {
-          "id":1,
-          "check":"chapter"
+          "id":2,
+          "check":"manga"
         }
       ],
       "ep":
