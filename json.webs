@@ -26,13 +26,6 @@
     {
       "baseUrl":"readmanganato.com",
       "type":"manga",
-      "extra":
-      [
-        {
-          "id":2,
-          "check":"manga"
-        }
-      ],
       "ep":
       {
           "state":true,
