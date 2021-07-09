@@ -30,7 +30,11 @@
       [
         {
           "id":1,
-          "check":"manga"
+          "check":"manga-[a-zA-Z0-9]+"
+        },
+        {
+          "id":2,
+          "check":"chapter-[0-9]+"
         }
       ],
       "ep":
