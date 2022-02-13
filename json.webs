@@ -551,12 +551,12 @@
         {
             "state":true,
             "getFromTitle":true,
-            "check":"^.* Episode ([0-9\.\,]+) - Animelon$"
+            "check":"^.* Episode ([0-9\\.\\,]+) - Animelon$"
         },
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"^(.*) Episode [0-9\.\,]+ - Animelon$"
+            "check":"^(.*) Episode [0-9\\.\\,]+ - Animelon$"
         }
       },
       {
@@ -573,12 +573,12 @@
         {
             "state":true,
             "getFromTitle":true,
-            "check":"^.* Episodio ([0-9\.\,]+) .*? — AnimeFLV$"
+            "check":"^.* Episodio ([0-9\\.\\,]+) .*? — AnimeFLV$"
         },
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"^(.*) Episodio [0-9\.\,]+) .*? — AnimeFLV$"
+            "check":"^(.*) Episodio [0-9\\.\\,]+) .*? — AnimeFLV$"
         }
       }
     ]
