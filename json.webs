@@ -507,12 +507,12 @@
         {
             "state":true,
             "getFromTitle":true,
-            "check":"^Manga: .* Chapter - ([0-9\.\,]+)-.*$"
+            "check":"^Manga: .* Chapter - ([0-9\\.\\,]+)-.*$"
         },
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"^Manga: (.*) Chapter - [0-9\.\,]+-.*$"
+            "check":"^Manga: (.*) Chapter - [0-9\\.\\,]+-.*$"
         }
       }
     ]
