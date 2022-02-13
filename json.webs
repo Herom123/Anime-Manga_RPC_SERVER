@@ -404,19 +404,45 @@
             },
             {
               "id":2,
-              "check":"anime"
+              "check":"anime|ova-movie"
             }
         ],
         "ep":
         {
             "state":true,
             "getFromTitle":false,
-            "check":"([0-9,\\.]+)"
+            "check":".*"
         },
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"^.* \\| (?:(?=.*? \\/ .*?)(?:(.*) \\/ .*)|(.*)) Ep. [0-9.,]+ in Romanian - .*$"
+            "check":"^.* \\| (?:(?=.*?\\/.*?)(?:(.*)\\/.*)|(.*)) Ep. [0-9.,]+ in Romanian - .*$"
+        }
+      },
+      {
+        "baseUrl":"ak438.anime-kage.eu",
+        "type":"manga",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"ak"
+            },
+            {
+              "id":2,
+              "check":"manga"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":false,
+            "check":".*"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^.* \\| (?:(?=.*?\\/.*?)(?:(.*)\\/.*)|(.*)) No. [0-9.,]+ in Romanian - .*$"
         }
       }
     ]
