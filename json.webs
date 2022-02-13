@@ -1,397 +1,424 @@
 { 
-  "webs":
-  [
-    {
-      "baseUrl":"wanimeflv.net",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":"ver"
-        }
-      ],
-      "type":"anime",
-      "ep":
+    "webs":
+    [
       {
-          "state":true,
-          "getFromTitle":false,
-          "check":"^.*-([0-9\.]+)$"
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":false,
-          "check":"^(.*)-[0-9\.]+$"
-      }
-    },
-    {
-      "baseUrl":"www.turkanime.net",
-      "extra":
-      [
+        "baseUrl":"wanimeflv.net",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"ver"
+          }
+        ],
+        "type":"anime",
+        "ep":
         {
-          "id":1,
-          "check":"video"
-        }
-      ],
-      "type":"anime",
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":"^(?:(?=\\b.*Bölüm\\b).* ([0-9,.]+)\\.(?: )?Bölüm|.*)$"
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"^(?:(?=\\b.*Bölüm\\b)(.*) [0-9,.]+\\.(?: )?Bölüm|(.*))$"
-      }
-    },
-    {
-      "baseUrl":"readmanganato.com",
-      "type":"manga",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":"manga-[a-zA-Z0-9]+"
+            "state":true,
+            "getFromTitle":false,
+            "check":"^.*-([0-9\\.]+)$"
         },
-        {
-          "id":2,
-          "check":"chapter-[0-9]+"
+        "name":{
+            "state":true,
+            "getFromTitle":false,
+            "check":"^(.*)-[0-9\\.]+$"
         }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":".* Chapter ([0-9]+).*"
       },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"(.*) Chapter [0-9]+.*"
-      }
-    },
-    {
-      "baseUrl":"mangagecesi.com",
-      "type":"manga",
-      "extra":
-      [
+      {
+        "baseUrl":"www.turkanime.net",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"video"
+          }
+        ],
+        "type":"anime",
+        "ep":
         {
-          "id":1,
-          "check":"manga"
+            "state":true,
+            "getFromTitle":true,
+            "check":"^(?:(?=\\b.*Bölüm\\b).* ([0-9,.]+)\\.(?: )?Bölüm|.*)$"
         },
-        {
-          "id":3,
-          "check":"bolum-[0-9]+"
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^(?:(?=\\b.*Bölüm\\b)(.*) [0-9,.]+\\.(?: )?Bölüm|(.*))$"
         }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":"Bölüm ([0-9]+) \\| .* - Manga Gecesi" 
       },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"Bölüm [0-9]+ \\| (.*) - Manga Gecesi"
-      }
-    },
-    {
-      "baseUrl":"mangastein.com",
-      "type":"manga",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":"manga"
-        }
-      ],
-      "ep":
       {
-          "state":true,
-          "getFromTitle":true,
-          "check":".* - Bölüm ([0-9]+) - .*" 
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"(.*) - Bölüm [0-9]+ - .*"
-      }
-    },
-    {
-      "baseUrl":"www.tranimeizle.net",
-      "type":"anime",
-      "extra":
-      [
+        "baseUrl":"readmanganato.com",
+        "type":"manga",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"manga-[a-zA-Z0-9]+"
+          },
+          {
+            "id":2,
+            "check":"chapter-[0-9]+"
+          }
+        ],
+        "ep":
         {
-          "id":0,
-          "check":"^$"
-        }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":".* ([0-9,.]+) Bölüm İzle - Türkanime izle",
-          "dont":"Bot Kontrol - Türkanime izle"
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"(.*) [0-9,.]+ Bölüm İzle - Türkanime izle",
-          "dont":"Bot Kontrol - Türkanime izle"
-      }
-    },
-    {
-      "baseUrl":"mangadex.org",
-      "type":"manga",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":"chapter"
-        }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":".* -.* Ch\\. ([0-9]+).* - MangaDex" 
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"(.*) -.* Ch\\. [0-9]+.* - MangaDex"
-      }
-    },
-    {
-      "baseUrl":"www.crunchyroll.com",
-      "type":"anime",
-      "extra":
-      [
-        {
-          "id":2,
-          "check":"episode-[0-9]+-.*-[0-9]+"
-        }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":".* Episode ([0-9]+.*) - Watch on Crunchyroll" 
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"(.*) Episode [0-9]+.* - Watch on Crunchyroll"
-      }
-    },
-    {
-      "baseUrl":"kissanime.ru.com",
-      "type":"anime",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":"episode"
-        }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":".* Episode ([0-9]+.*) - KissAnime.ru" 
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"(.*) Episode [0-9]+.* - KissAnime.ru"
-      }
-    },
-    {
-      "baseUrl":"www.funimation.com",
-      "type":"anime",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":"shows"
-        },{
-          "id":2,
-          "check":"..*"
-        },{
-          "id":3,
-          "check":"..*"
-        }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":"Watch .* Season [0-9]+(?: Episode ([0-9]+|[0-9]+.[0-9]+) |.)(?:Sub & Dub \\||Sub \\||Dub \\|) .* \\| Funimation"
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"Watch (.* Season [0-9]+)(?: Episode (?:[0-9]+|[0-9]+.[0-9]+) |.)(?:Sub & Dub \\||Sub \\||Dub \\|) .* \\| Funimation" 
-      }
-    },
-    {
-      "baseUrl":"9anime-tv.com",
-      "type":"anime",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":".*-(?:episode-[0-9]+-|\\\\S).*-(?:sub|dub)"
-        }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":"(?:.* Episode ([0-9]+.[0-9]+|[0-9]+) |(.*) ).* (?:SUB|DUB)" 
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"(?:(.*) Episode (?:[0-9]+.[0-9]+|[0-9]+) |(.*) ).* (?:SUB|DUB)"
-      }
-    },
-    {
-      "baseUrl":"www.animelab.com",
-      "type":"anime",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":"player"
-        }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":".* S[0-9]+:E([0-9]+) - [0-9]+ - AnimeLab" 
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"(.*) S[0-9]+:E[0-9]+ - [0-9]+ - AnimeLab"
-      }
-    },
-    {
-      "baseUrl":"www.chia-anime.me",
-      "type":"anime",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":".*-episode-[0-9]+-.*"
-        }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":"🎦 .* Episode ([0-9]+) Video Info - Chia-Anime"
-      },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"🎦 (.*) Episode [0-9]+ Video Info - Chia-Anime"
-      }
-    },
-    {
-      "baseUrl":"www.anime-planet.com",
-      "type":"anime",
-      "extra":
-      [
-        {
-          "id":1,
-          "check":"anime"
+            "state":true,
+            "getFromTitle":true,
+            "check":".* Chapter ([0-9]+).*"
         },
-        {
-          "id":2,
-          "check":".*"
-        },
-        {
-          "id":3,
-          "check":"videos"
-        },
-        {
-          "id":4,
-          "check":"[0-9]+"
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"(.*) Chapter [0-9]+.*"
         }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":"Watch .* Episode ([0-9]+.[0-9]+|[0-9]+) Online - .* \\| Anime-Planet"
       },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"Watch (.*) Episode (?:[0-9]+.[0-9]+|[0-9]+) Online - .* \\| Anime-Planet"
-      }
-    },
-    {
-      "baseUrl":"www.anime-planet.com",
-      "type":"manga",
-      "extra":
-      [
+      {
+        "baseUrl":"mangagecesi.com",
+        "type":"manga",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"manga"
+          },
+          {
+            "id":3,
+            "check":"bolum-[0-9]+"
+          }
+        ],
+        "ep":
         {
-          "id":1,
-          "check":"manga"
+            "state":true,
+            "getFromTitle":true,
+            "check":"Bölüm ([0-9]+) \\| .* - Manga Gecesi" 
         },
-        {
-          "id":2,
-          "check":".*"
-        },
-        {
-          "id":3,
-          "check":"chapters"
-        },
-        {
-          "id":4,
-          "check":"[0-9]+"
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"Bölüm [0-9]+ \\| (.*) - Manga Gecesi"
         }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":"Read .* online - chapter ([0-9]+.[0-9]+|[0-9]+) \\| Anime-Planet"
       },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"Read (.*) online - chapter (?:[0-9]+.[0-9]+|[0-9]+) \\| Anime-Planet"
-      }
-    },
-    {
-      "baseUrl":"animeheaven.ru",
-      "type":"anime",
-      "extra":
-      [
+      {
+        "baseUrl":"mangastein.com",
+        "type":"manga",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"manga"
+          }
+        ],
+        "ep":
         {
-          "id":1,
-          "check":"watch"
+            "state":true,
+            "getFromTitle":true,
+            "check":".* - Bölüm ([0-9]+) - .*" 
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"(.*) - Bölüm [0-9]+ - .*"
         }
-      ],
-      "ep":
-      {
-          "state":true,
-          "getFromTitle":true,
-          "check":"Watch .* (?:Episode ([0-9]+|[0-9]+.[0-9]+))? Online Free \\| AnimeHeaven"
       },
-      "name":{
-          "state":true,
-          "getFromTitle":true,
-          "check":"Watch (.*) (?:Episode (?:[0-9]+|[0-9]+.[0-9]+))? Online Free \\| AnimeHeaven"
+      {
+        "baseUrl":"www.tranimeizle.net",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":0,
+            "check":"^$"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":".* ([0-9,.]+) Bölüm İzle - Türkanime izle",
+            "dont":"Bot Kontrol - Türkanime izle"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"(.*) [0-9,.]+ Bölüm İzle - Türkanime izle",
+            "dont":"Bot Kontrol - Türkanime izle"
+        }
+      },
+      {
+        "baseUrl":"mangadex.org",
+        "type":"manga",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"chapter"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":".* -.* Ch\\. ([0-9]+).* - MangaDex" 
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"(.*) -.* Ch\\. [0-9]+.* - MangaDex"
+        }
+      },
+      {
+        "baseUrl":"www.crunchyroll.com",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":2,
+            "check":"episode-[0-9]+-.*-[0-9]+"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":".* Episode ([0-9]+.*) - Watch on Crunchyroll" 
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"(.*) Episode [0-9]+.* - Watch on Crunchyroll"
+        }
+      },
+      {
+        "baseUrl":"kissanime.ru.com",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"episode"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":".* Episode ([0-9]+.*) - KissAnime.ru" 
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"(.*) Episode [0-9]+.* - KissAnime.ru"
+        }
+      },
+      {
+        "baseUrl":"www.funimation.com",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"shows"
+          },{
+            "id":2,
+            "check":"..*"
+          },{
+            "id":3,
+            "check":"..*"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"Watch .* Season [0-9]+(?: Episode ([0-9]+|[0-9]+.[0-9]+) |.)(?:Sub & Dub \\||Sub \\||Dub \\|) .* \\| Funimation"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"Watch (.* Season [0-9]+)(?: Episode (?:[0-9]+|[0-9]+.[0-9]+) |.)(?:Sub & Dub \\||Sub \\||Dub \\|) .* \\| Funimation" 
+        }
+      },
+      {
+        "baseUrl":"9anime-tv.com",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":".*-(?:episode-[0-9]+-|\\\\S).*-(?:sub|dub)"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"(?:.* Episode ([0-9]+.[0-9]+|[0-9]+) |(.*) ).* (?:SUB|DUB)" 
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"(?:(.*) Episode (?:[0-9]+.[0-9]+|[0-9]+) |(.*) ).* (?:SUB|DUB)"
+        }
+      },
+      {
+        "baseUrl":"www.animelab.com",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"player"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":".* S[0-9]+:E([0-9]+) - [0-9]+ - AnimeLab" 
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"(.*) S[0-9]+:E[0-9]+ - [0-9]+ - AnimeLab"
+        }
+      },
+      {
+        "baseUrl":"www.chia-anime.me",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":".*-episode-[0-9]+-.*"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"🎦 .* Episode ([0-9]+) Video Info - Chia-Anime"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"🎦 (.*) Episode [0-9]+ Video Info - Chia-Anime"
+        }
+      },
+      {
+        "baseUrl":"www.anime-planet.com",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"anime"
+          },
+          {
+            "id":2,
+            "check":".*"
+          },
+          {
+            "id":3,
+            "check":"videos"
+          },
+          {
+            "id":4,
+            "check":"[0-9]+"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"Watch .* Episode ([0-9]+.[0-9]+|[0-9]+) Online - .* \\| Anime-Planet"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"Watch (.*) Episode (?:[0-9]+.[0-9]+|[0-9]+) Online - .* \\| Anime-Planet"
+        }
+      },
+      {
+        "baseUrl":"www.anime-planet.com",
+        "type":"manga",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"manga"
+          },
+          {
+            "id":2,
+            "check":".*"
+          },
+          {
+            "id":3,
+            "check":"chapters"
+          },
+          {
+            "id":4,
+            "check":"[0-9]+"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"Read .* online - chapter ([0-9]+.[0-9]+|[0-9]+) \\| Anime-Planet"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"Read (.*) online - chapter (?:[0-9]+.[0-9]+|[0-9]+) \\| Anime-Planet"
+        }
+      },
+      {
+        "baseUrl":"animeheaven.ru",
+        "type":"anime",
+        "extra":
+        [
+          {
+            "id":1,
+            "check":"watch"
+          }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"Watch .* (?:Episode ([0-9]+|[0-9]+.[0-9]+))? Online Free \\| AnimeHeaven"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"Watch (.*) (?:Episode (?:[0-9]+|[0-9]+.[0-9]+))? Online Free \\| AnimeHeaven"
+        }
+      },
+      {
+        "baseUrl":"ak438.anime-kage.eu",
+        "type":"anime",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"ak"
+            },
+            {
+              "id":2,
+              "check":"anime"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":false,
+            "check":"([0-9,\\.]+)"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^.* \\| (?:(?=.*? \\/ .*?)(?:(.*) \\/ .*)|(.*)) Ep. ([0-9.,]+) in Romanian - .*$"
+        }
       }
-    }
-  ]
-}
+    ]
+  }
+  
