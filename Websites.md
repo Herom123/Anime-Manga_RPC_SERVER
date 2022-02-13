@@ -1,9 +1,9 @@
 ### Anime Websites
 
-- turkanime.net
+- turkanime.co
 - tranimeizle.net
 - crunchyroll.com
-- kissanime.ru.com
+- kissanime.com.ru
 - funimation.com
 - 9anime-tv.com
 - animelab.com
@@ -15,7 +15,7 @@
 
 #### Manga Websites
 
-- manganelo.com
+- manganato.com
 - mangagecesi.com
 - mangastein.com
 - mangadex.org
