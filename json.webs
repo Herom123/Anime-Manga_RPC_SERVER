@@ -404,7 +404,7 @@
             },
             {
               "id":2,
-              "check":"(?:anime|ova-movie)"
+              "check":"anime|ova-movie"
             }
         ],
         "ep":
@@ -416,7 +416,7 @@
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"^.* \\| (?:(?=.*?\\/.*?)(?:(.*)\\/.*)|(.*)) Ep. [0-9.,]+ in Romanian - .*$"
+            "check":"^.* \| (?:(?=.*?\/.*?)(?:(.*)\/.*)|(.*)) Ep\.{0,1} [0-9\.\,]+ in Romanian . AnimeKage$"
         }
       },
       {
@@ -442,7 +442,7 @@
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"^.* \\| (?:(?=.*?\\/.*?)(?:(.*)\\/.*)|(.*)) No. [0-9.,]+ in Romanian - .*$"
+            "^.* \| (?:(?=.*?\/.*?)(?:(.*)\/.*)|(.*)) No\.{0,1} [0-9\.\,]+ in Romanian . AnimeKage$"
         }
       }
     ]
