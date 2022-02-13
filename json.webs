@@ -404,14 +404,14 @@
             },
             {
               "id":2,
-              "check":"anime|ova-movie"
+              "check":"(?:anime|ova-movie)"
             }
         ],
         "ep":
         {
             "state":true,
             "getFromTitle":false,
-            "check":".*"
+            "check":"(.*)"
         },
         "name":{
             "state":true,
@@ -437,7 +437,7 @@
         {
             "state":true,
             "getFromTitle":false,
-            "check":".*"
+            "check":"(.*)"
         },
         "name":{
             "state":true,
