@@ -12,6 +12,9 @@
 - animeheaven.ru
 - ak438.anime-kage.eu
 - animedao.to
+- animeflv.net
+- animelon.com
+- animepahe.ru
 <br/>
 <br/>
 
