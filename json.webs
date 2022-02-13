@@ -453,22 +453,18 @@
             {
               "id":1,
               "check":"view"
-            },
-            {
-              "id":2,
-              "check":"[0-9]+"
             }
         ],
         "ep":
         {
             "state":true,
-            "getFromTitle":false,
-            "check":"^.* Episode ([0-9\.\,]+) - AnimeDao$"
+            "getFromTitle":true,
+            "check":"^.* Episode ([0-9\\.\\,]+) - AnimeDao$"
         },
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"^(.*) Episode [0-9\.\,]+ - AnimeDao$"
+            "check":"^(.*) Episode [0-9\\.\\,]+ - AnimeDao$"
         }
       }
     ]
