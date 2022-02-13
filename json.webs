@@ -514,6 +514,28 @@
             "getFromTitle":true,
             "check":"^Manga: (.*) Chapter - [0-9\\.\\,]+-.*$"
         }
+      },
+      {
+        "baseUrl":"animepahe.ru",
+        "type":"anime",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"play"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"^.* Ep\\.{0,1} ([0-9\\.\\,]+) :: animepahe$"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^(.*) Ep\\.{0,1} [0-9\\.\\,]+ :: animepahe$"
+        }
       }
     ]
   }
