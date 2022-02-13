@@ -24,7 +24,7 @@
         }
       },
       {
-        "baseUrl":"www.turkanime.net",
+        "baseUrl":"www.turkanime.co",
         "extra":
         [
           {
@@ -188,7 +188,7 @@
         }
       },
       {
-        "baseUrl":"kissanime.ru.com",
+        "baseUrl":"kissanime.com.ru",
         "type":"anime",
         "extra":
         [
@@ -201,12 +201,12 @@
         {
             "state":true,
             "getFromTitle":true,
-            "check":".* Episode ([0-9]+.*) - KissAnime.ru" 
+            "check":"Watch .* (?:Episode ([0-9]+|[0-9]+.[0-9]+))? Online Free \\| KissAnime"
         },
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"(.*) Episode [0-9]+.* - KissAnime.ru"
+            "check":"Watch (.*) (?:Episode (?:[0-9]+|[0-9]+.[0-9]+))? Online Free \\| KissAnime"
         }
       },
       {
