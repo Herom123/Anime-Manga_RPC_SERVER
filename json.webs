@@ -466,6 +466,54 @@
             "getFromTitle":true,
             "check":"^(.*) Episode [0-9\\.\\,]+ - AnimeDao$"
         }
+      },
+      {
+        "baseUrl":"manhuaus.com",
+        "type":"manga",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"manga"
+            },
+            {
+              "id":3,
+              "check":"chapter-[0-9\\.\\,]+"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"^.* - Chapter ([0-9\\.\\,]+) - Manhuaus.com$"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^(.*) - Chapter [0-9\\.\\,]+ - Manhuaus.com$"
+        }
+      },
+      {
+        "baseUrl":"www.manga-raw.club",
+        "type":"manga",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"reader"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"^Manga: .* Chapter - ([0-9\.\,]+)-.*$"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^Manga: (.*) Chapter - [0-9\.\,]+-.*$"
+        }
       }
     ]
   }
