@@ -11,6 +11,7 @@
 - anime-planet.com
 - animeheaven.ru
 - ak438.anime-kage.eu
+- animedao.to
 <br/>
 <br/>
 
