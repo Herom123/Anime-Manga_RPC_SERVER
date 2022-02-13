@@ -189,12 +189,12 @@
       },
       {
         "baseUrl":"kissanime.com.ru",
-        "type":"Anime",
+        "type":"anime",
         "extra":
         [
           {
             "id":1,
-            "check":"episode"
+            "check":"Anime"
           }
         ],
         "ep":
