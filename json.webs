@@ -536,6 +536,50 @@
             "getFromTitle":true,
             "check":"^(.*) Ep\\.{0,1} [0-9\\.\\,]+ :: animepahe$"
         }
+      },
+      {
+        "baseUrl":"animelon.com",
+        "type":"anime",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"video"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"^.* Episode ([0-9\.\,]+) - Animelon$"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^(.*) Episode [0-9\.\,]+ - Animelon$"
+        }
+      },
+      {
+        "baseUrl":"www3.animeflv.net",
+        "type":"anime",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"ver"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"^.* Episodio ([0-9\.\,]+) .*? — AnimeFLV$"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^(.*) Episodio [0-9\.\,]+) .*? — AnimeFLV$"
+        }
       }
     ]
   }
