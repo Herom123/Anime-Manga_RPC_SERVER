@@ -10,6 +10,7 @@
 - chia-anime.me
 - anime-planet.com
 - animeheaven.ru
+- ak438.anime-kage.eu
 <br/>
 <br/>
 
@@ -20,6 +21,7 @@
 - mangastein.com
 - mangadex.org
 - anime-planet.com
+- ak438.anime-kage.eu
 <br/>
 <br/>
 <br/>
