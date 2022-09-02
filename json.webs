@@ -580,6 +580,43 @@
             "getFromTitle":true,
             "check":"^(.*) Episodio [0-9\\.\\,]+) .*? — AnimeFLV$"
         }
+      },
+      {
+        "baseUrl":"www3.animeflv.cc",
+        "type":"anime",
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":true,
+            "check":"^.* Episodio ([0-9\\.\\,]+) .*? — AnimeFLV$"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^(.*) Episodio [0-9\\.\\,]+) .*? — AnimeFLV$"
+        }
+      },
+      {
+        "baseUrl":"animeflv.ac",
+        "type":"anime",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"ver"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":false,
+            "check":"^.*-([0-9]+)$"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^(.*)-[0-9]+$"
+        }
       }
     ]
   }
