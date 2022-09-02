@@ -157,12 +157,12 @@
         {
             "state":true,
             "getFromTitle":true,
-            "check":".* -.* Ch\\. ([0-9]+).* - MangaDex" 
+            "check":"[0-9]+ \\| Chapter ([0-9\\.\\,]+) - .* - MangaDex" 
         },
         "name":{
             "state":true,
             "getFromTitle":true,
-            "check":"(.*) -.* Ch\\. [0-9]+.* - MangaDex"
+            "check":"[0-9]+ \\| Chapter [0-9\\.\\,]+ - (.*) - MangaDex" 
         }
       },
       {
