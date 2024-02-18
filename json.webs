@@ -635,9 +635,10 @@
             "check":"^ep-([0-9]+)$"
         },
         "name":{
+            "id":1,
             "state":true,
             "getFromTitle":false,
-            "check":"^(.*)-[0-9]+$"
+            "check":"^(.*)-[0-9a-z]+$"
         }
       }
     ]
