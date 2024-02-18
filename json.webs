@@ -617,6 +617,28 @@
             "getFromTitle":true,
             "check":"^(.*)-[0-9]+$"
         }
+      },
+      {
+        "baseUrl":"zorox.to",
+        "type":"anime",
+        "extra":
+        [
+            {
+              "id":1,
+              "check":"watch"
+            }
+        ],
+        "ep":
+        {
+            "state":true,
+            "getFromTitle":false,
+            "check":"^ep-([0-9]+)$"
+        },
+        "name":{
+            "state":true,
+            "getFromTitle":true,
+            "check":"^Watch (.*) Anime Online \\| .+$"
+        }
       }
     ]
   }
