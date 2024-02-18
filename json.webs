@@ -636,8 +636,8 @@
         },
         "name":{
             "state":true,
-            "getFromTitle":true,
-            "check":"^Watch (.*) Anime Online \\| .+$"
+            "getFromTitle":false,
+            "check":"^(.*)-[0-9]+$"
         }
       }
     ]
